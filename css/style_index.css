@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+/* carouse */
+.carousel_box {
+    padding-top: 67px;
+}
+/* mobile-tablet-phone */
+.menu__mobile {
+    display: none;
+}
+
+/* chuyen sang thanh nav mobi*/
+
+
+/* content */
+.text-1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Muli, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.text-2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+}
+
+.text,
+.text-1,
+.text-2,
+.icon-home {
+    display: block;
+}
+
+/* content btn */
+.text__click-btn  {
+    width: 130px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text__click-btn a {
+    text-decoration: none;
+}
+
+.text__click-btn button {
+ width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ font-weight: bold;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.text__click-btn button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, var(--color-text) 0%, #cbf2ff 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.text__click-btn button:hover::before {
+ width: 9em;
+}
+/* product index */
+section .card_p {
+    margin-top: 3em;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    /* background: rgb(0, 94, 255); */
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+section .card_p .card_img_p {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    border-radius: 1rem;
+    background-size: cover;
+    border: 1px solid black;
+    margin-top: -1em;
+}
+
+.section .card_p .card_img_p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -0.6rem 0.6rem 0 #fff;
+}
+
+.section .card_p .card_img_p::after {
+    content: '';
+    position: absolute;
+    bottom: 4.3rem;
+    left: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: red;
+    /* background: transparent; */
+    border-radius: 50%;
+    box-shadow: -0.6rem 0.6rem 0 #fff;
+}
+.card_img_p img{
+    height: auto;
+    width: 100%;
+}
+/* img hover */
+.card_p .box_2 img{
+    display: none;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+.box, .box_2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_p:hover .box {
+    display: none;
+}
+.card_p:hover .box_2 img {
+    animation: fadeIn 1.2s ease forwards  ;
+    display: block;
+}
+
+.icon_heart_main{
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+.icon_main_ip{
+    float: right;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+/* icon main cart menu */
+.main_box_icon_cart_ip{
+    position:absolute;
+    bottom: 2em;
+    right: 3em;
+    color: #fcfffb;
+    cursor: pointer;
+}
+
+.icon_main_cart_ip{
+    font-size: 2em;
+    align-items: center;
+}
+.icon_main_cart_ip:hover{
+    transform: rotate(360deg);
+    /* color: rgb(227, 196, 255); */
+    color: orange;
+}
+section .card_p .card_content_p {
+    position: relative;
+    width: 100%;
+    height: 9.3rem;
+    background: var(--color-text);
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    padding-top: 5px;
+}
+
+section .card_p .card_content_p ul {
+    color: #fff;
+}
+
+section .card_p .card_content_p ul li {
+    padding-top: 0.6rem;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+section .card_p .card_content_p .card_price_p {
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    height: 5rem;
+    width: 80%;
+    background: var(--color-text);
+    border-top: 0.6rem solid #fff;
+    border-right: 0.6rem solid #fff;
+    border-top-right-radius: 1.5rem;
+}
+
+section .card_p .card_content_p .card_price_p::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* background:red; */
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -0.6rem -0.6rem 0 #fff;
+}
+
+section .card_p .card_content_p .card_price_p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* background:red; */
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -0.6rem 0.6rem 0 var(--color-text);
+}
+
+section .card_p .card_content_p .card_price_p a {
+    position: relative;
+    background: #fff;
+    padding: 0.6rem 1.25rem;
+    margin: 1rem 1rem;
+    display: block;
+    border-radius: 0.4rem;
+    color: #333;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+}
+
+.box_special{
+    border:1px solid var(--color-text);
+    border-radius: 5px;
+    width: 100%;
+    height: 12em;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+.box_special:hover{
+    border: 1px solid orange;
+}
+.box_icon_special{
+    width: 8em;
+    height: 8em;
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    margin: 2em 2em;
+}
+
+.box_icon_special i{
+    font-size: 4em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    color: var(--color-text);
+}
+
+.content_special{
+    width: 100%;
+    margin-top: 2em;
+    color:  var(--color-text);
+}
+.content_special h3{
+    font-size: 2em;
+    font-weight: 600;
+}
+.content_special p{
+    font-size: 1.5em;
+}
+/* animation */
+
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

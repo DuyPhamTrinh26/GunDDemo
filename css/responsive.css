@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+/* ////////////////////////////////////// */
+
+
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+
+
+
+    .carousel_box {
+        padding-top: 10px;
+    }
+
+    /* an menupc */
+    .menu__pc {
+        display: none;
+    }
+
+    /* .menu__mobile{
+        height: 5000px;
+        display: none;
+    } */
+
+    .menu__mobile_phone {
+
+        display: block;
+    }
+
+    /* menu */
+    .text-1 {
+        font-size: 1rem;
+    }
+
+    .text-2 {
+        font-size: 2rem;
+    }
+
+
+    .card_price_p a{
+        font-size: 2em;
+    }
+}
+
+/* Tablet: width >=740px and width < 740px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    /* .course-item-menu {
+        height: 450px;
+        background-color: brown;
+    } */
+    /* text-content */
+    .story_text {
+        margin-top: 0;
+    }
+
+    .carousel_box {
+        padding-top: 50px;
+    }
+
+    .carousel_box {
+        padding-top: 30px;
+    }
+
+    /* chi tiet SP */
+    .left_content {
+        margin-top: 30px;
+    }
+
+    .right_content {
+        margin-top: 10px;
+    }
+
+    .main_img_ip img {
+        width: 100%;
+    }
+
+    .main_img_ip {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .main_img_ip img {
+        border: 2px solid black;
+    }
+
+}
+
+/* 1024x1366 */
+@media only screen and (min-width: 1336px) and (max-width: 1024px) {
+    .logo {
+        width: 200px;
+        height: 50px;
+        display: inline-block;
+    }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 600px) and (min-width:730px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+
+    .wrapper {
+        width: 300px;
+        height: 440px;
+    }
+
+    .overlay_1 {
+        right: 0;
+        bottom: 0;
+    }
+ 
+}
+/* Smartphones (portrait) font chữ trên sp ----------- */
+@media only screen and (max-width: 415px) {
+
+  
+    section .card_p .card_content_p .card_price_p a {
+      
+        font-size: 1em;
+    }
+    section .card_p {
+        height: 25rem;
+    }
+    section .card_p .card_content_p ul li {
+        font-size: 1em;
+    }
+    .main_box_icon_cart_ip{
+        bottom: 2em;
+        right: 1em;
+        
+    }
+    
+}
+
+/* Smartphones (portrait) font chữ trên sp ----------- */
+@media only screen and (max-width: 1000px)and (min-width: 600px){
+
+    .card_img_p img{
+        height: 210px;
+    }
+  
+}
+/* chỉnh kích thước hình ảnh khi vover */
+@media only screen and (max-width: 778px)and (min-width: 600px){
+
+    .box_2{
+        margin-top: -5em;
+    }
+  
+}
+@media only screen and (max-width: 1000px)and (min-width: 779px){
+
+    .box_2{
+        margin-top: -7em;
+    }
+  
+}
+
+/* Smartphones (portrait) font chữ trên sp ----------- */
+@media only screen and (max-width: 1124px)and (min-width: 1001px){
+
+    .card_img_p img{
+        height: 210px;
+    }
+    section .card_p .card_content_p .card_price_p a {
+      
+        font-size: 1em;
+    }
+    
+}
+/* header menu trang chi tiết sp: width < 990x */
+@media only screen and (max-width: 61.875em) {
+
+    header2 {
+        display: block;
+    }
+
+    .course_item_left {
+        display: none;
+    }
+    .box_fixx_cart{
+       
+        top:60px;
+       
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    headerS{
+       display: block;
+       width: 100%;
+       background-color:#000f31;
+       height: auto;
+       position: fixed;
+       top: -50px;
+       z-index: 99;
+       padding: 7px 0;
+
+   }
+  
+   .box_none_mobi{
+       display: none;
+   }
+  
+
+}
